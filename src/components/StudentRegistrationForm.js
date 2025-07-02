@@ -35,7 +35,7 @@ const StudentRegistrationForm=()=>{
             errors.password="password is required";
         }
         else if(values.password.length<6){
-            errors.password="Password must be at least characters";
+            errors.password="Password must be at least 6 characters";
         }
 
          if(!values.confirmPassword){
@@ -117,7 +117,7 @@ const StudentRegistrationForm=()=>{
 
                    <div >
 
-                    <Field type="checkbox" name="terms" />I agree to the terms and conditions
+                    <Field type="checkbox" name="terms" className="checkerbox" />I agree to the terms and conditions
                    
                     
                    </div>
